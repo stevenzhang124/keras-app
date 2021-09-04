@@ -1,0 +1,5 @@
+Flask==1.1.2
+Keras==2.2.5
+Pillow==5.1.0
+requests==2.18.4
+

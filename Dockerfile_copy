@@ -1,0 +1,6 @@
+FROM nvcr.io/nvidia/l4t-tensorflow:r32.4.2-tf1.15-py3
+WORKDIR /app
+COPY tensorflow_gpu-1.14.0+nv19.9-cp36-cp36m-linux_aarch64.whl /app
+RUN pip3 uninstall -y  tensorflow
+RUN pip3 install tensorflow_gpu-1.14.0+nv19.9-cp36-cp36m-linux_aarch64.whl
+
